@@ -55,6 +55,30 @@ function coreGame(cMove, pMove) {
     }
 }
 
+let AutoPlay = false;
+let ID;
+
+function autoPlay(){
+    if(!AutoPlay){
+        let btn = document.querySelector(".autoplay");
+        btn.innerHTML = "StopPlay";
+        AutoPlay = true;
+            ID = setInterval(function(){
+            cMove = computerMove();
+            pMove = computerMove();
+            coreGame(cMove,pMove);
+        },1000);        
+    }
+    else{
+        clearInterval(ID);
+        let btn = document.querySelector(".autoplay");
+        btn.innerHTML = "AutoPlay";
+        AutoPlay = false;
+    }
+    
+    
+}
+
 function resetScore() {
     score.Wins = 0;
     score.Losses = 0;

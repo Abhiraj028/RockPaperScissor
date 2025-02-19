@@ -39,7 +39,7 @@ body{
     font-size: 20px;
 }
 
-.reset{
+.reset, .autoplay{
     padding: 8px 15px 8px 15px;
     font-size: 15px;
     cursor: pointer;
