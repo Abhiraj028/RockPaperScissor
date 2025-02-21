@@ -79,6 +79,17 @@ function autoPlay(){
     
 }
 
+function remove(){
+    const sure = document.querySelector(".sure");
+    sure.innerHTML = "";
+}
+
+function reset(){
+    const sure = document.querySelector(".sure");
+    sure.innerHTML=`Are you sure you want to reset the score?  
+    <button class="bttn"onclick="remove();resetScore();">Yes</button>
+    <button class="bttn" onclick="remove();">  No</button>`;
+}
 function resetScore() {
     score.Wins = 0;
     score.Losses = 0;

@@ -39,11 +39,12 @@ body{
     font-size: 20px;
 }
 
-.reset, .autoplay{
+.reset, .autoplay, .bttn{
     padding: 8px 15px 8px 15px;
     font-size: 15px;
     cursor: pointer;
     border:none;
+    margin:5px;
 }
 
 .top-res{
